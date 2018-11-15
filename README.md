@@ -1,11 +1,14 @@
 # hadoop-setup
 
-
-# AS ROOT, add your system user (ex: my_user_id) to sudo withou a password
+As root, add your system user (ex: my_user_id) to sudo without a password
+```
 sudo visudo
-# add:
+```
+add:
+```
 my_user_id  ALL=(ALL) NOPASSWD:ALL
-# save and exit
+```
+Save and exit
 
 
 # AS ROOT, download and set up openjdk in /opt/jdk/current/
@@ -169,4 +172,3 @@ http://localhost:8088/cluster/
 
 # when it's done, check the progress:
 bin/hdfs dfs -cat output/*
-
